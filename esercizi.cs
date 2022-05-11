@@ -18,5 +18,19 @@
             sStringaDaModificare = sStringaDaModificare + "abc";
 
         }
+
+        public static float GeneraMedia(int[] ArrayDiNumeri)
+        {
+            int iNumElementi = ArrayDiNumeri.Length;
+            float fSomma = 0;
+            for (int i = 0; i < iNumElementi; i++)
+            {
+                fSomma = fSomma + ArrayDiNumeri[i];
+
+
+            }
+            float fMedia = fSomma / (float)iNumElementi;
+            return fMedia;
+        }
     }
 }
